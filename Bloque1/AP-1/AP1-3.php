@@ -13,10 +13,12 @@
  foreach ($array as $clave => $valor) {
      if ($valor == "primero" || $valor == "tercero" || $valor == "quinto") {
          echo "Estas en una posicion impar <br>";
-         $ìmpar = $valor;
+         $ìmpar = true;
+         $par = false;
      }elseif ($valor == "segundo" || $valor == "cuarto" || $valor == "sexto") {
          echo "Estas en una posicion par <br>";
-         $par = $valor;
+         $par = true;
+         $impar = false;
      };
 
      $sumaClaves += $clave;
