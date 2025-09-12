@@ -1,8 +1,7 @@
 <?php
-$array = ['hola' => $_GET['hola'],
-    'clave' => $_GET['clave'],
-    'clave2' => $_GET['clave2'],
-    'dato' => $_GET['dato']];
+$array= array();
+
+$array = $_GET;
 
 foreach ($array as $clave => $valor) {
     if (is_numeric($valor)){
